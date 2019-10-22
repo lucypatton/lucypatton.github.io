@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ransom</title>
+	<style type="text/css">
+		span {
+			font-size: 38px;
+      color:teal
+		}
+		span.secret:hover {
+			color: red;
+		}
+    div.hint {
+      visibility: hidden;
+    }
+    
+	</style>
+
+	<script type="text/javascript">
+		function check() {
+			el = document.getElementsByTagName('input');
+			if(el[0].value == "helen") {
+				alert("you got it!");
+			} 
+      else if(el[1].value="ellen") {
+
+      } else {
+				alert("no, try again");
+        document.getElementsByClassName('hint')[0].style.visibility="visible";
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+<div class="hint">think of parkhurst</div>
+
+
+  <span>T</span>
+  <span>&nbsp</span>
+  <span class="secret">H</span>
+  <span>&nbsp</span>
+  <span class="secret">E</span>
+  <span>&nbsp</span>
+  <span>&nbsp</span>
+  <span>D</span>
+  <span>A</span>
+  <span>&nbsp</span>
+  <span class="secret">L</span>
+  <span>&nbsp</span>
+  <span>T</span>
+  <span>&nbsp</span>
+  <span>O</span>
+  <span>&nbsp</span>
+  <span>N</span>
+  <span>&nbsp</span>
+  <span>&nbsp</span>
+  <span class="secret">E</span>
+  <span>-</span>
+  <span>P</span>
+  <span>&nbsp</span>
+  <span>L</span>
+  <span>&nbsp</span>
+  <span>A</span>
+  <span>&nbsp</span>
+  <span class="secret">N</span>
+  <span>!</span>
+
+  <br>
+  <hr>
+  <label>What are the highlighted letters?</label>
+  <input type="text" name="answer">
+  <button onclick="check()">submit</button >
+    <br>
+    <br>
+  <label>What is a jumble of these letters?</label>
+  <input type="text" name="answer">
+  <button onclick="check()">submit</button >
+</body>
+</html>
